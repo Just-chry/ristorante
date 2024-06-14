@@ -14,7 +14,6 @@
     background: rgba(50, 50, 50, 0.5);
 
     letter-spacing: -0.025em;
-    color: #f1e9c0;
     line-height: 60px;
     font-size: 18px;
     z-index: 1000;
@@ -50,7 +49,7 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    color: #ffffff;
+    color: #87CEFA; /* LightSkyBlue */
     text-decoration: none;
     font-weight: bold;
     padding: 0.5rem 1rem;
@@ -60,15 +59,15 @@
 
 .logo:hover,
 .logo:active {
-    background: linear-gradient(90deg, #ffa200, #ffffff);
+    background: linear-gradient(90deg, #87CEFA, #0000FF); /* LightSkyBlue, Blue */
+    filter: drop-shadow(2px 2px 4px rgb(0, 158, 255)); /* LightSkyBlue */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px 4px rgb(255, 185, 0));
 }
 
 .active {
-    background: linear-gradient(90deg, #ff8a05, #f9b331);
+    background: linear-gradient(90deg, #0000FF, #1E90FF); /* Blue, DodgerBlue */
     background-clip: text;
     -webkit-background-clip: text;
 

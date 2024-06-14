@@ -93,10 +93,22 @@ a {
 
 
 
-body.background{
-  background-image: url("/images/mainbg.jpg");
+body.background {
+  position: relative;
+}
+
+body.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/entrata.jpg");
   background-size: auto;
   background-repeat: no-repeat;
+  opacity: 35%; /* Adjust this value to change the opacity */
+  z-index: -1;
 }
 
 

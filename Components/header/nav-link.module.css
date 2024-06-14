@@ -1,24 +1,21 @@
 .link{
     text-decoration: none;
-    color: #ffffff;
+    color: #51beff; /* LightSkyBlue */
     padding: 20px;
     border-radius: 0.5rem;
-
 }
+
 .link:hover,
 .link:active {
-    background: linear-gradient(90deg, #ffa200, rgb(255, 185, 0));
+    background: linear-gradient(90deg, #52b6f4, #0000FF); /* LightSkyBlue, Blue */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px 4px rgba(248, 190, 42, 0.8));
-
+    filter: drop-shadow(2px 2px 4px rgba(135,206,250,0.8)); /* LightSkyBlue */
 }
 
 .active {
-    background: linear-gradient(90deg, #ff8a05, #f9b331);
+    background: linear-gradient(90deg, #0000FF, #1E90FF); /* Blue, DodgerBlue */
     background-clip: text;
     -webkit-background-clip: text;
-
 }
-

@@ -1,7 +1,7 @@
 .footer {
     position: relative;
     width: 100%;
-    background: #ff9a05;
+    background: #05d1ff; /* LightSkyBlue */
     min-height: 100px;
     padding: 20px 50px;
     display: flex;

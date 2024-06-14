@@ -14,7 +14,7 @@ export default function MainHeader() {
     useEffect(() => {
         const scrollFunction = () => {
             if (window.scrollY > 50) {
-                document.getElementById("header").style.backgroundColor = "#f1e9c0";
+                document.getElementById("header").style.backgroundColor = "#87CEFA";
                 setColor('black');
                 setLogo(logoBlack);
             } else {
