@@ -24,7 +24,7 @@ export default function Home() {
             <main className={classes.main}>
 
                 <div className={classes.hero}>
-                    <h1 className={classes.sign}>NICE RESTAURANT</h1>
+                    <h1 className={classes.sign}>HAPPY DAYS</h1>
                     <p>
                         VERY PROFESSIONAL!
                     </p>
