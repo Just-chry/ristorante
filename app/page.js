@@ -1,95 +1,95 @@
+'use client'
+import classes from "./page.module.css";
+import {useEffect} from 'react'
+import Link from "next/link";
+import imgGrill from "@/assets/meatgrill.jpg"
+import imgRow1 from "@/assets/row1.jpg"
+import imgRow2 from "@/assets/row2.jpg"
+import imgRow3 from "@/assets/row3.jpg"
 import Image from "next/image";
-import styles from "./page.module.css";
+
 
 export default function Home() {
-  return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    useEffect(() => {
+        document.body.classList.add('background');
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        // unmount action
+        return () => document.body.classList.remove('background');
+    }, [])
+    return (
+        <>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+            <header className={classes.header}></header>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+            <main className={classes.main}>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
+                <div className={classes.hero}>
+                    <h1 className={classes.sign}>NICE RESTAURANT</h1>
+                    <p>
+                        VERY PROFESSIONAL!
+                    </p>
+                    <div className={classes.cta}>
+                        <Link href="/menu">LOOK MENU</Link>
+                    </div>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
-  );
+                </div>
+
+            </main>
+            <div className={classes.container}>
+
+                <div className={classes.containerText}>
+                    <div className={classes.containerHeader}>
+                        <h2 className={classes.headerUp}>Nice Restaurant</h2>
+                        <h1 className={classes.headerDown}>Welcome</h1>
+                    </div>
+                    Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+                    Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+                </div>
+                <div className={classes.imageContainer}>
+                    <Image className={classes.image} src={imgGrill}></Image></div>
+            </div>
+
+
+            <div className={classes.container2}>
+                <div className={classes.containerText}>
+                    <div className={classes.containerHeader}>
+                        <h2 className={classes.headerUp}>Discover</h2>
+                        <h1 className={classes.headerDown}>Nice Restaurant</h1>
+                    </div>
+                </div>
+            </div>
+            <div className={classes.divImageRow}>
+                <div className={classes.smallImgContainer}>
+                    <div className={classes.imageContainerRow}>
+                        <Image className={classes.imageRow} src={imgRow1}></Image>
+                    </div>
+                        <h3 className={classes.smallHeader}>NICE PLACE </h3>
+                    <p className={classes.imageRowText}>
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+                    </p>
+                </div>
+                <div className={classes.smallImgContainer}>
+                    <div className={classes.imageContainerRow}>
+                        <Image className={classes.imageRow} src={imgRow2}></Image></div>
+                        <h3 className={classes.smallHeader}>NICE FOOD</h3>
+                    <p className={classes.imageRowText}>
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+                    </p>
+                </div>
+                <div className={classes.smallImgContainer}>
+                    <div className={classes.imageContainerRow}>
+                        <Image className={classes.imageRow} src={imgRow3}></Image></div>
+                        <h3 className={classes.smallHeader}>NICE DESSERT</h3>
+                    <p className={classes.imageRowText}>
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
+                    </p>
+                </div>
+            </div>
+
+
+        </>
+    );
 }
+
+
+
