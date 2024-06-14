@@ -81,7 +81,7 @@
 
 html,
 body {
-  max-width: 100vw;
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -104,10 +104,10 @@ body.background::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("/images/entrata.jpg");
-  background-size: auto;
+  background-image: url("/images/Sala2.jpg");
+  background-size: contain;
   background-repeat: no-repeat;
-  opacity: 35%; /* Adjust this value to change the opacity */
+  opacity: 35%;
   z-index: -1;
 }
 

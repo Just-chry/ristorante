@@ -7,11 +7,11 @@
 
 .link:hover,
 .link:active {
-    background: linear-gradient(90deg, #52b6f4, #0000FF); /* LightSkyBlue, Blue */
+    background-image: linear-gradient(to right, #00a1fc, #00a1fc); /* LightSkyBlue, Blue */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(2px 2px 4px rgba(135,206,250,0.8)); /* LightSkyBlue */
+    filter: drop-shadow(2px 2px 8px rgb(110, 210, 255)); /* LightSkyBlue */
 }
 
 .active {
