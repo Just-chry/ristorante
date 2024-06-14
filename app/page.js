@@ -39,7 +39,7 @@ export default function Home() {
 
                 <div className={classes.containerText}>
                     <div className={classes.containerHeader}>
-                        <h2 className={classes.headerUp}>Nice Restaurant</h2>
+                        <h2 className={classes.headerUp1}>Nice Restaurant</h2>
                         <h1 className={classes.headerDown}>Welcome</h1>
                     </div>
                     Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est.
@@ -53,7 +53,7 @@ export default function Home() {
             <div className={classes.container2}>
                 <div className={classes.containerText}>
                     <div className={classes.containerHeader}>
-                        <h2 className={classes.headerUp}>Discover</h2>
+                        <h2 className={classes.headerUp2}>Discover</h2>
                         <h1 className={classes.headerDown}>Nice Restaurant</h1>
                     </div>
                 </div>
