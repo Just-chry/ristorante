@@ -353,6 +353,7 @@
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out;
+    color: black;
 }
 
 .cta:focus {
@@ -360,7 +361,7 @@
 }
 
 .cta {
-    background-image: linear-gradient(to right, #2388c3, #0000FF, #87CEFA, #1E90FF); /* LightSkyBlue, Blue, LightSkyBlue, DodgerBlue */
+    background-image: linear-gradient(to right, #3cb5fb, #1a6591, #ffffff, #ffffff); /* LightSkyBlue, Blue, LightSkyBlue, DodgerBlue */
 }
 
 
