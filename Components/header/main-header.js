@@ -9,7 +9,7 @@ import logoBlack from "/assets/logoBlack.png";
 
 export default function MainHeader() {
     const [logo, setLogo] = useState(logoWhite);
-    const [color, setColor] = useState('white');
+    const [, setColor] = useState('white');
 
     useEffect(() => {
         const scrollFunction = () => {
@@ -31,7 +31,7 @@ export default function MainHeader() {
 
     return (
         <header id="header" className={classes.header}>
-            <Link className={classes.logo} href="/public">
+            <Link className={classes.logo} href="/">
                 <Image src={logo} alt="Logo"/>
             </Link>
             <nav className={classes.nav}>
