@@ -4,14 +4,18 @@
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-    border-radius: 4px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: all 0.3s ease-in-out;
-    color: #ddd6cb;
-    background: linear-gradient(30deg, #4e3301, #060000, #000000, #000000, #000000);
-
+    color: black;
+    background: rgb(255, 255, 255);
 }
+
+.meal h2 {
+    color: rgb(0, 160, 255);
+}
+
+
 
 .headerText {
     padding: 0.5rem 1rem 0 1rem;
@@ -27,7 +31,7 @@
 
 .headerText p {
     font-size: 0.75rem;
-    color: #cfa69b;
+    color: #000000;
     font-style: italic;
 }
 
@@ -65,14 +69,14 @@
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-    background: linear-gradient(90deg, #f9572a, #ff9b05);
+    background: linear-gradient(90deg, #1E90FF, #87cefa);
     color: #ffffff;
     text-decoration: none;
 }
 
 .actions a:hover,
 .actions a:active {
-    background: linear-gradient(90deg, #fd4715, #f9b241);
-    box-shadow: 0 0 12px rgba(242, 100, 18, 0.8);
+    background: linear-gradient(90deg, #ffffff, #ffffff);
+    box-shadow: 0 0 12px rgb(77, 184, 255);
+    color: #000000;
 }
