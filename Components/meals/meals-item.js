@@ -19,7 +19,7 @@ export default function MealsItems({title, slug, image, summary, creator}) {
                     {summary}
                 </p>
                 <div className={classes.actions}>
-                    <Link href ={"/meals/" + slug}>View details</Link>
+                    <button>ALLERGENI</button>
                 </div>
             </div>
         </article>

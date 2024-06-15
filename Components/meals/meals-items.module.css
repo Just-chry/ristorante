@@ -65,17 +65,18 @@
     text-align: right;
 }
 
-.actions a {
+.actions button {
     display: inline-block;
     margin-top: 1rem;
     padding: 0.5rem 1rem;
     background: linear-gradient(90deg, #1E90FF, #87cefa);
     color: #ffffff;
-    text-decoration: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.actions a:hover,
-.actions a:active {
+.actions button:hover,
+.actions button:active {
     background: linear-gradient(90deg, #ffffff, #ffffff);
     box-shadow: 0 0 12px rgb(77, 184, 255);
     color: #000000;

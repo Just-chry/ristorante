@@ -339,8 +339,6 @@
     background-size: 300% 100%;
     margin-top: 60px;
     filter: brightness(90%);
-
-    border-radius: 50px;
     moz-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     -webkit-transition: all .4s ease-in-out;
