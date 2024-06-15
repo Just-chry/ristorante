@@ -2,21 +2,19 @@
 import classes from "./page.module.css";
 import Image from "next/image";
 import imgEntrata from '@/public/images/Sala2.jpg';
-import PhoneIcon from '@/assets/telefono.png'; // Assumi che l'immagine del telefono sia salvata in questa posizione
+
 
 export default function ContactPage() {
     return (
-        <main className={classes.main}>
-            <div className={classes.imgCont}>
-                <Image className={classes.mainImage} src={imgEntrata} alt="chef" layout="fill" objectFit="cover"/>
+    <main className={classes.main}>
+        <div className={classes.imgCont}>
+        <Image className={classes.mainImage} src={imgEntrata} alt="chef" layout="fill" objectFit="cover"/>
                 <h1 className={classes.sign}>CONTATTACI</h1>
             </div>
-            <div className={classes.containerAddress}>
                 <div className={classes.address}>
                     <h3>Indirizzo:</h3>
                     <p>Via Marghera 24, 20149 Milano MI</p>
                 </div>
-            </div>
             <div className={classes.container}>
                 <div className={classes.maps}>
                     <iframe
@@ -29,34 +27,42 @@ export default function ContactPage() {
                         referrerPolicy="no-referrer-when-downgrade"
                     />
                 </div>
-                <div className={classes.infoContainer}>
-                    <div className={classes.openingHours}>
-                        <h2>ORARI DI APERTURA:</h2>
-                        <ul>
-                            <li>Lunedì 12 – 14:30, chiuso a cena</li>
-                            <li>Martedì 12:00 – 14:30, 19 – 24</li>
-                            <li>Mercoledì 12 – 14:30, 19 – 24</li>
-                            <li>Giovedì 12 – 14:30, 19 – 24</li>
-                            <li>Venerdì 12 – 14:30, 19 – 24</li>
-                            <li>Sabato 12 – 14:30, 19 – 24</li>
-                            <li>Domenica 12 – 14:30, 19 – 24</li>
+                <div className={classes.contactInfo}>
+                    <div className={classes.infoContainer}>
+                        <ul className={classes.ul}>
+                            <li className={classes.li}>
+                                <h2 className={classes.h2}>TELEFONO</h2>
+                                <div className={classes.infoContent}>
+                                    <p className={classes.p}>
+                                        <div>Tel. 02 481 7075</div>
+                                        <div>Tel. 02 439 82643</div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li className={classes.li}>
+                                <h2 className={classes.h2}>INDIRIZZO</h2>
+                                <div className={classes.infoContent}>
+                                    <p className={classes.p}>
+                                        <div>Via Marghera, 24</div>
+                                        <div>20149 Milano MI</div>
+                                    </p>
+                                </div>
+                            </li>
+                            <li className={classes.li}>
+                                <h2 className={classes.h2}>ORARI</h2>
+                                <div className={classes.infoContent}>
+                                    <p className={classes.p}>
+                                        <div>Lunedì 12 – 14:30, Chiuso </div>
+                                        <div>Martedì 12 – 14:30, 19 – 23</div>
+                                        <div>Mercoledì 12 – 14:30, 19 – 23</div>
+                                        <div>Giovedì 12 – 14:30, 19 – 23</div>
+                                        <div>Venerdì 12 – 14:30, 19 – 23</div>
+                                        <div>Sabato 12 – 14:30, 19 – 23</div>
+                                        <div>Domenica 12 – 14:30, 19 – 23</div>
+                                    </p>
+                                </div>
+                            </li>
                         </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div className={classes.phoneNumbers}>
-                    <div className={classes.phoneNumber}>
-                        <div className={classes.phoneIcon}>
-                            <Image src={PhoneIcon} alt="Telefono Icona" width={40} height={40}/>
-                        </div>
-                        <a href="tel:+39024817075" className={classes.phoneLink}>Tel. 02 481 70 75</a>
-                    </div>
-                    <div className={classes.phoneNumber}>
-                        <div className={classes.phoneIcon}>
-                            <Image src={PhoneIcon} alt="Telefono Icona" width={40} height={40}/>
-                        </div>
-                        <a href="tel:+390243982643" className={classes.phoneLink}>Tel. 02 439 82 643</a>
                     </div>
                 </div>
             </div>

@@ -3,7 +3,7 @@ import MainHeader from "@/Components/header/main-header";
 import MainFooter from "@/Components/footer/main-footer";
 
 export const metadata = {
-  title: 'NextLevel Food',
+  title: 'Happy Days',
   description: 'Delicious meals, shared by a food-loving menu.',
 };
 
