@@ -38,8 +38,6 @@ export default function MainHeader() {
                 <ul>
                     <li><Navlink href="/">Home</Navlink></li>
                     <li><Navlink href="/menu">Menu</Navlink></li>
-                    <li><Navlink href="/gallery">Gallery</Navlink></li>
-                    <li><Navlink href="/about">About</Navlink></li>
                     <li><Navlink href="/contact">Contact</Navlink></li>
                 </ul>
             </nav>
